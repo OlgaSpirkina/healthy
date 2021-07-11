@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/* l'effet de scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* création des variables des police et des couleurs */
+:root {
+  --mainpurple: #825E7A;
+  --mainorange: #FF813F;
+  --fonttitle: "Archivo Black", sans-serif;
+  --fonttext: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--fonttext);
+}
+
+/* la section à propos */
+#banner {
+  background-image: url("../img/veggi-background.jpg");
+}
+
+#programming {
+  background-image: url("../img/purple-background.jpg");
+}
+
+/* l'effet paralax pour deux images */
+#programming,
+#banner {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* bannière et le descriptif */
+.about {
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 15rem auto 0.5rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+}
+
+.logo {
+  width: 7rem;
+  border-radius: 0.6rem;
+}
+
+/* la barre de recherche: input et icone de recherche */
+input {
+  height: 3rem;
+  border: 1px solid var(--mainpurple);
+  border-radius: 1rem;
+}
+input:focus {
+  outline: none;
+}
+
+label,
+input,
+.icon {
+  width: 30vw;
+}
+
+label {
+  font-family: var(--fonttitle);
+  font-size: 1.5rem;
+}
+
+.fa-search {
+  position: relative;
+  font-size: 1.5rem;
+  z-index: 1;
+  top: 3.4rem;
+  padding-right: 0.5rem;
+  color: var(--mainpurple);
+}
+
+/* Styliser les cartes */
+.card-title {
+  height: 4rem;
+}
+
+.card {
+  border: 1px solid #91a3b0;
+  border-radius: 1rem;
+}
+.card:hover {
+  scale: 1.01;
+}
+
+.card-img-top {
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* la div popup et ses différentes parties: heading, title, body, footeret une icone pour fermer la div*/
+.popup {
+  z-index: 1;
+  position: absolute;
+  width: 30vw;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+#popup-heading {
+  height: 10vh;
+  color: #fff;
+  background-color: #000;
+}
+
+#popup-title {
+  height: 20vh;
+  background-image: url("../img/popup.jpg");
+  font-family: var(--fonttitle);
+  text-align: center;
+}
+#popup-title h1 {
+  color: #fff;
+}
+#popup-title h2 {
+  color: #efab00;
+  background-color: rgba(145, 163, 176, 0.7);
+}
+
+#popup-body {
+  height: 35vh;
+  background-color: #fff;
+  border: 1px solid rgba(145, 163, 176, 0.7);
+  overflow: scroll;
+}
+#popup-body ul {
+  height: 30vh;
+  margin: 0 auto;
+}
+#popup-body ul li {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+#popup-footer {
+  background-color: rgba(145, 163, 176, 0.7);
+}
+#popup-footer a {
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #efab00;
+  text-decoration: none;
+}
+
+/* une icone permettant de fermer la div popup */
+.fa-window-close {
+  position: relative;
+  float: right;
+  color: var(--mainpurple);
+  opacity: 0.7;
+  margin: 0.2rem;
+}
+.fa-window-close:hover {
+  scale: 1.1;
+  opacity: 1;
+}
+
+/* le footer */
+footer {
+  height: 5rem;
+  /* les icones de contacts */
+}
+footer a {
+  text-decoration: none;
+  color: var(--mainpurple);
+}
+
+@media only screen and (max-width: 468px) {
+  label,
+input,
+.icon {
+    width: 100%;
+  }
+
+  /* bannière et le descriptif */
+  .about {
+    width: 90vw;
+    margin: 1rem auto;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  #popup {
+    width: 100%;
+  }
+
+  #displayTechnos li {
+    padding: 0.1rem;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #popup {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #popup {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  #popup {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
