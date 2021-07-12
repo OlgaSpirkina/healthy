@@ -106,6 +106,7 @@ label {
 }
 
 .card {
+  widht: 30rem;
   border: 1px solid #91a3b0;
   border-radius: 1rem;
 }
@@ -115,6 +116,7 @@ label {
 
 .card-img-top {
   border-radius: 1rem 1rem 0 0;
+  height: 20rem;
 }
 
 /* la div popup et ses différentes parties: heading, title, body, footeret une icone pour fermer la div*/
@@ -225,6 +227,36 @@ footer a {
   color: var(--mainpurple);
 }
 
+@media (min-width: 250px) and (max-width: 349px) {
+  .card-img-top {
+    height: 12rem;
+  }
+
+  .card-body {
+    height: 15rem;
+  }
+
+  .card-text {
+    margin: 0;
+  }
+}
+@media (min-width: 350px) and (max-width: 550px) {
+  .card {
+    width: 25rem;
+  }
+
+  .card-img-top {
+    height: 16rem;
+  }
+
+  .card-body {
+    height: 15rem;
+  }
+
+  .card-text {
+    margin: 0;
+  }
+}
 @media (min-width: 250px) and (max-width: 550px) {
   label,
 input,
