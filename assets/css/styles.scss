@@ -111,6 +111,7 @@ color: var(--mainpurple);
   height: 10vh;
   color: #fff;
   background-color: var(--secondpurple);
+  border-radius: 1rem 1rem 0 0;
 }
 #popup-title{
   height: 20vh;
@@ -141,6 +142,7 @@ color: var(--mainpurple);
 }
 #popup-footer{
   background-color: rgba(145, 163, 176, .7);
+  border-radius: 0 0 1rem 1rem;
   a {
     border-radius: 1rem;
     color: #fff;
