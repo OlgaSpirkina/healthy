@@ -7,13 +7,34 @@ html {
 /* création des variables des police et des couleurs */
 :root {
   --mainpurple: #825E7A;
-  --mainorange: #FF813F;
+  --mainyellow: #efab00;
+  --secondpurple: rgba(130, 126, 154, .9);
   --fonttitle: "Archivo Black", sans-serif;
   --fonttext: "Roboto", sans-serif;
 }
 
 body {
   font-family: var(--fonttext);
+}
+
+#navbarNav {
+  margin-left: 6rem;
+}
+
+.logo-yummy {
+  position: fixed;
+  z-index: 1050;
+}
+
+.navbar {
+  background-color: rgba(248, 249, 250, 0.9);
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-right: 2rem;
+  color: #000;
 }
 
 /* la section à propos */
@@ -28,7 +49,7 @@ body {
 /* l'effet paralax pour deux images */
 #programming,
 #banner {
-  min-height: 500px;
+  min-height: 700px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,25 +58,24 @@ body {
 
 /* bannière et le descriptif */
 .about {
-  width: 50vw;
+  width: 35vw;
   background-color: rgba(255, 255, 255, 0.8);
-  margin: 15rem auto 0.5rem;
+  margin: 25rem auto 0.5rem;
   border-radius: 2rem;
   font-size: 1.1rem;
 }
 
-.logo {
-  width: 7rem;
-  border-radius: 0.6rem;
+.logo-food {
+  color: var(--mainyellow);
 }
 
-/* la barre de recherche: input et icone de recherche */
-input {
+/* la barre de recherche: input #searchBar et icone de recherche */
+#searchBar {
   height: 3rem;
   border: 1px solid var(--mainpurple);
   border-radius: 1rem;
 }
-input:focus {
+#searchBar:focus {
   outline: none;
 }
 
@@ -108,7 +128,7 @@ label {
 #popup-heading {
   height: 10vh;
   color: #fff;
-  background-color: #000;
+  background-color: var(--secondpurple);
 }
 
 #popup-title {
@@ -144,9 +164,9 @@ label {
   background-color: rgba(145, 163, 176, 0.7);
 }
 #popup-footer a {
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   color: #fff;
-  background-color: #efab00;
+  background-color: var(--mainyellow);
   text-decoration: none;
 }
 
@@ -154,7 +174,7 @@ label {
 .fa-window-close {
   position: relative;
   float: right;
-  color: var(--mainpurple);
+  color: #fff;
   opacity: 0.7;
   margin: 0.2rem;
 }
@@ -163,8 +183,37 @@ label {
   opacity: 1;
 }
 
+#contactMe {
+  width: 25vw;
+  margin-top: 15rem;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}
+
+#name,
+#email {
+  width: 20vw;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+p label {
+  color: var(--mainyellow);
+}
+
+textarea {
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.submit {
+  background-color: var(--mainyellow);
+}
+
 /* le footer */
 footer {
+  background-color: rgba(248, 249, 250, 0.9);
   height: 5rem;
   /* les icones de contacts */
 }
@@ -189,6 +238,7 @@ input,
   }
 
   #popup {
+    position: fixed;
     width: 100%;
   }
 

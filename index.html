@@ -18,45 +18,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Yummy & Healthy</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#banner">A propos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#companies">Recettes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#programming">Réseaux sociaux</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <div class="logo-yummy"><img src="assets/img/logo.png" alt="logo Yummy&Healthy" style="width:10rem"/></div>
     <section id="banner" class="container-fluid">
       <div class="row">
+        <nav class="navbar navbar-expand-lg fixed-top transparent">
+          <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo Yummy&Healthy" style="width:10rem"/></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#banner">A propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#companies">Recettes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#programming">Réseaux sociaux</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         <div class="about col-12">
-          <p class="text-center mt-3"><strong>Bonjour, je suis Olga, dévéloppeuse web junior</strong></p>
-          <p class="text-center">Actuellement en formation de développeuse web chez
-            <a href="https://descodeuses.org/" target="_blank"><img class="logo" src="assets/img/descodeuses.png" alt="logo Descodeuses"/></a>
-          je recherche un stage de 6 mois afin d’accroitre mes compétences et mon expérience professionnelle dans ce domaine.
-          Passionnée par le sport, j’ai décidé de me réorienter dans la tech car le marché est porteur d’opportunités d’emploi et inspirant à mon gout.
-          J’aime développer des idées et les convertir en projet réel. Les qualités développées durant mon passé sportif, telles que l'autonomie, la rigueur, la persévérance, la réactivité sont autant d’atouts qui peuvent être utiles dans le milieu informatique.
+          <p class="text-center pt-5"><strong>Bonjour, je suis Olga, dévéloppeuse web junior</strong></p>
+          <p class="text-center">Binevenue sur mon blog consacré aux recettes simples et délicieuses à la base des légumes,
+            céréales, graines et légumineuses.
           </p>
-          <p class="text-center">J'aime apprendre, j'apprends vite et j'aime coder.</p>
+          <p class="text-center"><i class="logo-food fas fa-3x fa-lemon"></i> Régalez-vous!</p>
         </div>
       </div>
     </section>
     <section id="companies" class="container-fluid">
       <div class="row">
         <form class="d-flex flex-column justify-content-center my-4">
-          <label class="mx-auto text-center my-1" for="searchBar">Recherche par nom d'entreprise ou post:</label>
+          <label class="mx-auto text-center my-1" for="searchBar">Recherche par nom de plat ou ingredients:</label>
           <div class="icon mx-auto d-flex justify-content-end">
             <i class="fas fa-search"></i>
           </div>
@@ -66,21 +64,31 @@
         <div id="displayCards" class="col-12 d-flex justify-content-center flex-wrap"></div>
       </div>
     </section>
-    <section id="programming">
-      <p id="test"></p>
+    <section id="programming" class="container-fluid">
+      <div class="row d-flex justify-content-center">
+        <form action="script/php/index.php" method="post" id="contactMe" name="contactMe">
+            <div class="d-flex flex-column justify-content-center">
+              <p><label for="name">Votre nom</label></p>
+              <p><input type="text" id="name" name="firstname" placeholder="entrez votre nom"></p>
+            </div>
+            <div class="d-flex flex-column justify-content-center">
+              <p><label for="email">email</label></p>
+              <p><input type="text" id="email" name="firstname" placeholder="entrez votre email"></p>
+            </div>
+            <textarea rows="4" cols="40" name="comment" form="contactMe">Votre message...</textarea>
+          <button type="submit" class="submit btn my-3">Envoyer</button>
+        </form>
+      </div>
     </section>
-
-
-
     <!--FOOTER-->
     <footer class="container-fluid">
-      <div class="row d-flex mt-3">
-        <p class="col-md-10 align-self-center">Olga Spirkina &copy; 2021</p>
-        <div class="col-md-2 d-flex justify-content-around social-media">
-          <a href="https://github.com/OlgaSpirkina" target="blank"><i class="fab fa-2x fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/olga-spirkina" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
-          <a href="https://olgaspirkina.github.io/" target="_blank"><i class="fas fa-2x fa-code-branch"></i></a>
-          <a href="#"><i class="far fa-2x fa-envelope-open"></i></a>
+      <div class="row d-flex">
+        <p class="col-md-10 align-self-center mt-3">Olga Spirkina &copy; 2021</p>
+        <div class="col-md-2 d-flex justify-content-around social-media mt-3">
+          <a href="#"><i class="fab fa-2x fa-pinterest"></i></a>
+          <a href="#"><i class="fab fa-2x fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-2x fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-2x fa-youtube"></i></a>
         </div>
       </div>
     </footer>
