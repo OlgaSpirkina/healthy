@@ -87,10 +87,10 @@ color: var(--mainpurple);
 }
 /* Styliser les cartes */
 .card-title{
-  height: 4rem;
+  // height: 4rem;
 }
 .card{
-  widht: 30rem;
+  width: 30rem;
   border: 1px solid #91a3b0;
   border-radius: 1rem;
   &:hover{
@@ -99,7 +99,7 @@ color: var(--mainpurple);
 }
 .card-img-top{
   border-radius: 1rem 1rem 0 0;
-  height: 20rem;
+  height: 314px;
 }
 /* la div popup et ses différentes parties: heading, title, body, footeret une icone pour fermer la div*/
 .popup{
@@ -201,25 +201,56 @@ footer{
 // media queries
 // media spéciales pour les images des cartes qui se déforment beaucoup
 @media (min-width: 250px) and (max-width: 349px) {
+  #banner{
+    min-height: 300px;
+  }
   .card-img-top{
-    height: 12rem;
+    height: 200px;
   }
   .card-body{
-    height: 15rem;
+    // height: 15rem;
   }
   .card-text{
     margin: 0;
   }
 }
-@media (min-width: 350px) and (max-width: 550px){
+@media (min-width: 350px) and (max-width: 400px){
 .card{
   width: 25rem;
 }
 .card-img-top{
-  height: 16rem;
+  height: 220px;
 }
 .card-body{
-  height: 15rem;
+  // height: 15rem;
+}
+.card-text{
+  margin: 0;
+  }
+}
+@media (min-width: 401px) and (max-width: 550px){
+.card{
+  width: 25rem;
+}
+.card-img-top{
+  height: 250px;
+}
+.card-body{
+  // height: 15rem;
+}
+.card-text{
+  margin: 0;
+  }
+}
+@media (min-width: 551px) and (max-width: 1000px){
+.card{
+  width: 20rem;
+}
+.card-img-top{
+  height: 210px;
+}
+.card-body{
+  // height: 15rem;
 }
 .card-text{
   margin: 0;
@@ -235,7 +266,7 @@ footer{
   /* bannière et le descriptif */
   .about{
     width: 90vw;
-    margin: 3rem auto;
+    margin: 15rem auto;
     font-size: 1rem;
     border-radius: 1rem;
   }
@@ -315,7 +346,7 @@ footer{
     width: 70%;
   }
   .about{
-    width: 70vw;
+    width: 90vw;
     font-size: 1rem;
   }
   #contactMe{
@@ -341,6 +372,9 @@ footer{
     width: 40vw;
     margin: auto;
   }
+  .about{
+    width: 80vw;
+  }
   label,
   input,
   .icon{
@@ -363,5 +397,8 @@ footer{
   #name,
   #email{
     width: 90%;
+  }
+  .about{
+    width: 70vw;
   }
 }

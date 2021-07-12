@@ -101,12 +101,8 @@ label {
 }
 
 /* Styliser les cartes */
-.card-title {
-  height: 4rem;
-}
-
 .card {
-  widht: 30rem;
+  width: 30rem;
   border: 1px solid #91a3b0;
   border-radius: 1rem;
 }
@@ -116,7 +112,7 @@ label {
 
 .card-img-top {
   border-radius: 1rem 1rem 0 0;
-  height: 20rem;
+  height: 314px;
 }
 
 /* la div popup et ses différentes parties: heading, title, body, footeret une icone pour fermer la div*/
@@ -228,29 +224,51 @@ footer a {
 }
 
 @media (min-width: 250px) and (max-width: 349px) {
-  .card-img-top {
-    height: 12rem;
+  #banner {
+    min-height: 300px;
   }
 
-  .card-body {
-    height: 15rem;
+  .card-img-top {
+    height: 200px;
   }
 
   .card-text {
     margin: 0;
   }
 }
-@media (min-width: 350px) and (max-width: 550px) {
+@media (min-width: 350px) and (max-width: 400px) {
   .card {
     width: 25rem;
   }
 
   .card-img-top {
-    height: 16rem;
+    height: 220px;
   }
 
-  .card-body {
-    height: 15rem;
+  .card-text {
+    margin: 0;
+  }
+}
+@media (min-width: 401px) and (max-width: 550px) {
+  .card {
+    width: 25rem;
+  }
+
+  .card-img-top {
+    height: 250px;
+  }
+
+  .card-text {
+    margin: 0;
+  }
+}
+@media (min-width: 551px) and (max-width: 1000px) {
+  .card {
+    width: 20rem;
+  }
+
+  .card-img-top {
+    height: 210px;
   }
 
   .card-text {
@@ -267,7 +285,7 @@ input,
   /* bannière et le descriptif */
   .about {
     width: 90vw;
-    margin: 3rem auto;
+    margin: 15rem auto;
     font-size: 1rem;
     border-radius: 1rem;
   }
@@ -361,7 +379,7 @@ input,
   }
 
   .about {
-    width: 70vw;
+    width: 90vw;
     font-size: 1rem;
   }
 
@@ -392,6 +410,10 @@ input,
     margin: auto;
   }
 
+  .about {
+    width: 80vw;
+  }
+
   label,
 input,
 .icon {
@@ -417,6 +439,10 @@ input,
 #name,
 #email {
     width: 90%;
+  }
+
+  .about {
+    width: 70vw;
   }
 }
 
