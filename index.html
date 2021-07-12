@@ -18,16 +18,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="logo-yummy"><img src="assets/img/logo.png" alt="logo Yummy&Healthy" style="width:10rem"/></div>
+    <div class="logo-yummy"><img src="assets/img/logo.png" alt="logo Yummy&Healthy" /></div>
     <section id="banner" class="container-fluid">
       <div class="row">
         <nav class="navbar navbar-expand-lg fixed-top transparent">
           <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo Yummy&Healthy" style="width:10rem"/></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-collapse collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#banner">A propos</a>
@@ -36,7 +35,7 @@
                   <a class="nav-link" href="#companies">Recettes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#programming">Réseaux sociaux</a>
+                  <a class="nav-link" href="#contact-area">Contact</a>
                 </li>
               </ul>
             </div>
@@ -60,11 +59,11 @@
           </div>
           <input class="mx-auto my-3" type="search" id="searchBar" name="searchBar">
         </form>
-        <div id="displayPopup" class="sticky-top d-flex justify-content-center"></div>
+        <div id="displayPopup" class="sticky-top col-12 d-flex justify-content-center"></div>
         <div id="displayCards" class="col-12 d-flex justify-content-center flex-wrap"></div>
       </div>
     </section>
-    <section id="programming" class="container-fluid">
+    <section id="contact-area" class="container-fluid">
       <div class="row d-flex justify-content-center">
         <form action="script/php/index.php" method="post" id="contactMe" name="contactMe">
             <div class="d-flex flex-column justify-content-center">
@@ -75,7 +74,7 @@
               <p><label for="email">email</label></p>
               <p><input type="text" id="email" name="firstname" placeholder="entrez votre email"></p>
             </div>
-            <textarea rows="4" cols="40" name="comment" form="contactMe">Votre message...</textarea>
+            <textarea rows="4" cols="40" name="comment" form="contactMe" placeholder="Votre message..."></textarea>
           <button type="submit" class="submit btn my-3">Envoyer</button>
         </form>
       </div>

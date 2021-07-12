@@ -139,7 +139,7 @@ function displayPopup(name, level, id){
         if(item.name == name){
           let answer =
           `
-          <div id="popup" class="popup">
+          <div id="popup" class="popup col-12">
             <div id="popup-heading">
               <i class="far fa-2x fa-window-close m-2" onclick="closeIt()"></i>
               <p class="m-2"><small>Savoir plus sur les ingrédients</small></p>

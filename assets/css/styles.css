@@ -21,7 +21,8 @@ body {
   margin-left: 6rem;
 }
 
-.logo-yummy {
+.logo-yummy img {
+  width: 8rem;
   position: fixed;
   z-index: 1050;
 }
@@ -37,17 +38,17 @@ body {
   color: #000;
 }
 
-/* la section à propos */
+/* l'image du fond pour les sections à propos et contact-area */
 #banner {
   background-image: url("../img/veggi-background.jpg");
 }
 
-#programming {
+#contact-area {
   background-image: url("../img/purple-background.jpg");
 }
 
 /* l'effet paralax pour deux images */
-#programming,
+#contact-area,
 #banner {
   min-height: 700px;
   background-attachment: fixed;
@@ -237,29 +238,73 @@ input,
     border-radius: 0.5rem;
   }
 
-  #popup {
-    position: fixed;
-    width: 100%;
-  }
-
   #displayTechnos li {
     padding: 0.1rem;
     margin-top: 0;
   }
+
+  textarea,
+#name,
+#email {
+    width: 100%;
+  }
+
+  #contactMe {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 550px) {
   #popup {
-    width: 80%;
+    width: 100%;
+  }
+
+  #contactMe {
+    width: 100%;
+  }
+
+  .logo-yummy img {
+    width: 5rem;
   }
 }
 @media only screen and (max-width: 1200px) {
   #popup {
     width: 60%;
   }
+
+  #contactMe {
+    width: 80%;
+  }
+
+  textarea,
+#name,
+#email {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1400px) {
   #popup {
     width: 50%;
+  }
+
+  #contactMe {
+    width: 60%;
+  }
+
+  textarea,
+#name,
+#email {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+  #contactMe {
+    width: 40%;
+  }
+
+  textarea,
+#name,
+#email {
+    width: 90%;
   }
 }
 
