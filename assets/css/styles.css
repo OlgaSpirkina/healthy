@@ -223,7 +223,7 @@ footer a {
   color: var(--mainpurple);
 }
 
-@media only screen and (max-width: 468px) {
+@media (min-width: 250px) and (max-width: 550px) {
   label,
 input,
 .icon {
@@ -233,9 +233,22 @@ input,
   /* bannière et le descriptif */
   .about {
     width: 90vw;
-    margin: 1rem auto;
+    margin: 3rem auto;
     font-size: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  #popup {
+    width: 100vw;
+  }
+
+  #popup-body,
+#popup-title,
+#popup-heading,
+#popup-footer {
+    left: 0;
+    width: 90vw;
+    z-index: 2;
   }
 
   #displayTechnos li {
@@ -252,13 +265,41 @@ input,
   #contactMe {
     width: 90%;
   }
+
+  .logo-yummy img {
+    width: 5rem;
+  }
 }
-@media only screen and (max-width: 550px) {
+@media (min-width: 551px) and (max-width: 700px) {
   #popup {
-    width: 100%;
+    width: 90vw;
+  }
+
+  #popup-body,
+#popup-title,
+#popup-heading,
+#popup-footer {
+    width: 80vw;
+  }
+
+  label,
+input,
+.icon {
+    width: 90%;
+  }
+
+  .about {
+    width: 80vw;
+    font-size: 1rem;
   }
 
   #contactMe {
+    width: 60%;
+  }
+
+  textarea,
+#name,
+#email {
     width: 100%;
   }
 
@@ -266,9 +307,28 @@ input,
     width: 5rem;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media (min-width: 701px) and (max-width: 900px) {
   #popup {
-    width: 60%;
+    width: 90vw;
+  }
+
+  #popup-body,
+#popup-title,
+#popup-heading,
+#popup-footer {
+    width: 60vw;
+    margin: auto;
+  }
+
+  label,
+input,
+.icon {
+    width: 70%;
+  }
+
+  .about {
+    width: 70vw;
+    font-size: 1rem;
   }
 
   #contactMe {
@@ -280,10 +340,28 @@ input,
 #email {
     width: 100%;
   }
+
+  .logo-yummy img {
+    width: 7rem;
+  }
 }
-@media only screen and (max-width: 1400px) {
+@media (min-width: 901px) and (max-width: 1200px) {
   #popup {
-    width: 50%;
+    width: 90vw;
+  }
+
+  #popup-body,
+#popup-title,
+#popup-heading,
+#popup-footer {
+    width: 40vw;
+    margin: auto;
+  }
+
+  label,
+input,
+.icon {
+    width: 60%;
   }
 
   #contactMe {
@@ -296,7 +374,7 @@ input,
     width: 100%;
   }
 }
-@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
   #contactMe {
     width: 40%;
   }
