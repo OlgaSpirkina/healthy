@@ -17,19 +17,17 @@ body{
 #navbarNav{
   margin-left: 6rem;
 }
-.logo-yummy img{
-  width: 8rem;
-  position: fixed;
-  z-index: 1050;
+.logo-yummy{
+  width: 7rem;
+  margin: 0;
+  padding: 0;
 }
 .navbar{
   background-color: rgba(248, 249, 250, .9);
   a{
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bolder;
-    margin-right: 2rem;
-    color: #000;
   }
 }
 /* l'image du fond pour les sections à propos et contact-area */
