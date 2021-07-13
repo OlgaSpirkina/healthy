@@ -6,6 +6,7 @@ html {
 :root{
   --mainpurple: #825E7A;
   --mainyellow: #efab00;
+  --logored: #FF4F4F;
   --secondpurple: rgba(130, 126, 154, .9);
   --fonttitle: 'Archivo Black', sans-serif;
   --fonttext: 'Roboto', sans-serif;
@@ -24,6 +25,10 @@ body{
 }
 .navbar{
   background-color: rgba(248, 249, 250, .9);
+  .navbar-toggler,
+  .navbar-toggler-icon{
+    color: var(--logored);
+  }
   a{
     text-decoration: none;
     font-size: 1.2rem;
