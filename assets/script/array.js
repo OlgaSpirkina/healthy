@@ -116,8 +116,8 @@ const displayRecipesAsCards = (anyArray) => {
   const htmlString = anyArray.map((arrayElement) => {
 // la carte qui sera afficher pour chaque element du tableau
     return `
-    <div id="item_${arrayElement.id}" class="card m-3" style="width: 30rem;">
-     <img src="${arrayElement.img}" class="card-img-top img-fluid" style="height: 20rem;" alt="logo de la sociéte ${arrayElement.name}">
+    <div id="item_${arrayElement.id}" class="card m-3">
+     <img src="${arrayElement.img}" class="card-img-top img-fluid" alt="le plat ${arrayElement.name}">
       <div class="card-body">
         <h5 class="card-title mb-5">${arrayElement.name}</h5>
         <p class="card-text m-3"><i class="fas fa-3x fa-clock"></i><span class="mx-2">${arrayElement.coockingTime}</span></p>
