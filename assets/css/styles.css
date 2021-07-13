@@ -28,9 +28,6 @@ body {
   padding: 0;
 }
 
-.navbar {
-  background-color: rgba(248, 249, 250, 0.9);
-}
 .navbar .navbar-toggler,
 .navbar .navbar-toggler-icon {
   color: var(--logored);
@@ -232,7 +229,7 @@ footer a {
   }
 
   .card-img-top {
-    height: 200px;
+    height: 190px;
   }
 
   .card-text {
@@ -245,7 +242,7 @@ footer a {
   }
 
   .card-img-top {
-    height: 220px;
+    height: 190px;
   }
 
   .card-text {
