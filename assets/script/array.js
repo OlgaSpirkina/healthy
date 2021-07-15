@@ -107,7 +107,7 @@ input.addEventListener('keyup', (e) => {
       eachRecipe.ingredients.toString().toLowerCase().includes(searchString) //je convertis le tableau d'ingredients en string
     );
   });
-  // j'appelle la fonction qui génére les cartes avec la fonction qui filtre comme argument
+  // j'appelle la fonction qui génère les cartes avec la fonction qui filtre comme argument
   displayRecipesAsCards(filteredRecipes);
 
 });
